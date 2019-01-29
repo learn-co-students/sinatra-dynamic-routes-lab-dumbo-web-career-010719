@@ -23,7 +23,19 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-  	# binding.pry
+
   	erb :"#{params[:operation]}"
+
+  	# case params[:operation]
+   #  when 'add'
+   #    answer = (number1 + number2).to_s
+   #  when 'subtract'
+   #    answer = (number1 - number2).to_s
+   #  when 'multiply'
+   #    answer = (number1 * number2).to_s
+   #  when 'divide'
+   #    answer = (number1 / number2).to_s
+   #  end
+
   end
 end
